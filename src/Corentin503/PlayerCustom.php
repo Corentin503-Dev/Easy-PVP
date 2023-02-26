@@ -38,11 +38,4 @@ class PlayerCustom extends Player
             $this->setMotion($motion);
         }
     }
-
-    public function attack(EntityDamageEvent $event): void
-    {
-        $config = Main::getInstance()->getConfig();
-        $delay = (int)$config->get("delay");
-        $event->setAttackCooldown($delay);
-    }
 }
