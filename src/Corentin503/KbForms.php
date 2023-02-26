@@ -22,7 +22,7 @@ class KbForms
                 $player->sendMessage("§aVos modification on été enregistré");
             } else $player->sendMessage("§cMerci de ne mettre que des chiffres");
         });
-        $form->setTitle("§9KB Custom Rush");
+        $form->setTitle("§9KB Custom");
         $form->addInput("Delay", "", $config->get("delay"));
         $form->addInput("X", "", $config->get("x"));
         $form->addInput("Y","", $config->get("y"));
